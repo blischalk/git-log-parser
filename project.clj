@@ -5,5 +5,6 @@
             :url "http://www.eclipse.org/legal/epl-v10.html"}
   :dependencies [[org.clojure/clojure "1.5.1"]
                  [instaparse "1.3.1"]]
+  :main git-log-parser.core
   :profiles {:dev {:plugins [[lein-midje "3.0.0"]]
                    :dependencies [[midje "1.6.3"]]}})
