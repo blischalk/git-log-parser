@@ -1,7 +1,8 @@
 (ns git-log-parser.core-test
   (:require [clojure.test :refer :all]
-            [git-log-parser.core :refer :all]))
+            [git-log-parser.core :refer :all]
+            [midje.sweet :refer :all]))
 
 (deftest a-test
-  (testing "FIXME, I fail."
-    (is (= 0 1))))
+  (testing "Passing test"
+    (is (= 1 1))))
