@@ -3,6 +3,6 @@
             [git-log-parser.core :refer :all]
             [midje.sweet :refer :all]))
 
-(deftest a-test
-  (testing "Passing test"
+(facts "A test"
+  (fact "Should pass"
     (is (= 1 1))))

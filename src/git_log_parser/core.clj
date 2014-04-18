@@ -1,6 +1,7 @@
-(ns git-log-parser.core)
+(ns git-log-parser.core
+  (:require [clojure.java.io :as io])
+  (:gen-class :main true))
 
-(defn foo
-  "I don't do a whole lot."
-  [x]
-  (println x "Hello, World!"))
+(defn -main
+  [& args]
+  (println args))
