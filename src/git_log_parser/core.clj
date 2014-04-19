@@ -4,9 +4,10 @@
 
 
 (defn -main [& args]
-  (with-open  [stream
-               (io/reader (. System in))]
+  (with-open  [input (io/reader *in*)
+               output (io/writer *out*)]
     (do
-      (println
-       (apply str (line-seq stream))))))
+      (.write
+       output
+       (apply str (line-seq input))))))
 
